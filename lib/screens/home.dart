@@ -70,11 +70,21 @@ class Home extends StatelessWidget {
         ),
         body: new Container(),
         bottomNavigationBar: new BottomNavigationBar(
-          items: new List<BottomNavigationBarItem>(
+          items: <BottomNavigationBarItem>[
             new BottomNavigationBarItem(
               icon: Icon(Icons.new_releases),
+              title: new Text("Recents"),
             ),
-          ),
+            new BottomNavigationBarItem(
+              icon: Icon(Icons.trending_up),
+              title: new Text("Trending"),
+            ),
+            new BottomNavigationBarItem(
+              icon: Icon(Icons.turned_in),
+              title: new Text("Enrolled"),
+            ),
+          ],
+          currentIndex: 0,
         ),
       ),
     );
