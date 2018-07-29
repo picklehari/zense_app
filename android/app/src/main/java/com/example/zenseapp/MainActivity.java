@@ -1,4 +1,4 @@
-package com.example.zenseapp;
+package app.zense.mobile;
 
 import android.os.Bundle;
 
